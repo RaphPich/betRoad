@@ -5,3 +5,4 @@
 cd user or cd editeur
 python3 -m http.server
 ```
+Then open <a href = "http://localhost:8000"> Betroad</a>
