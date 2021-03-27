@@ -1,5 +1,7 @@
-Betroad web game using Phaser3
+<h1 align = "center">Betroad</h1>
 
-Launch :
-  - get into the current file user or editeur
-  - python3 -m http.server
+# Start playing
+```
+cd user or cd editeur
+python3 -m http.server
+```
