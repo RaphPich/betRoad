@@ -31,18 +31,18 @@ function create()
         repeat: -1
     });
     
-    fire = this.add.sprite(f1.x, f1.y+f1.height*f1Scale*globalScale*.8, 'fire1').play('fire').setAngle(-180).setScale(2.75*globalScale);
+    fire = this.add.sprite(f1.x, f1.y+f1.height*f1Scale*globalScale*.8, 'fire1').play('fire').setAngle(-180).setScale(1.375*globalScale);
     f1Crash = this.add.sprite(f1.x,f1.y,'f1_crash').setScale(f1Scale*globalScale);
 
     //Menu End and Start
     scoreGroup = this.physics.add.staticGroup();
 
-    scoreEndSprite   = this.add.tileSprite(config['width']*.5,config["height"]*.26,0,0,'score').setScale(.375*globalScale);
-    win = this.add.tileSprite(config['width']/2,config['height']*.6,0,0,'jaigagne').setScale(.375*globalScale);
+    scoreEndSprite   = this.add.tileSprite(config['width']*.5,config["height"]*.26,0,0,'score').setScale(.1875*globalScale);
+    win = this.add.tileSprite(config['width']/2,config['height']*.6,0,0,'jaigagne').setScale(.1875*globalScale);
 
-    hand = this.add.tileSprite(config['width']*.5,config['height']*.6,0,0,'hand').setScale(.375*globalScale);
-    slideLeft   = this.add.tileSprite(config['width']/2-ground.width*.25*globalScale,config['height']*.45,0,0,'slide').setScale(.25*globalScale);
-    slideRight = this.add.tileSprite(config['width']/2+ground.width*.25*globalScale,config['height']*.45,0,0,'slide').setScale(.25*globalScale);
+    hand = this.add.tileSprite(config['width']*.5,config['height']*.6,0,0,'hand').setScale(.1875*globalScale);
+    slideLeft   = this.add.tileSprite(config['width']/2-ground.width*.25*globalScale,config['height']*.45,0,0,'slide').setScale(.125*globalScale);
+    slideRight = this.add.tileSprite(config['width']/2+ground.width*.25*globalScale,config['height']*.45,0,0,'slide').setScale(.125*globalScale);
 
     this.physics.world.setBounds(leftStop,-3*f1Scale*globalScale*f1.height, rightStop-leftStop,config["height"]*2, true, true);
     

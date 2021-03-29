@@ -41,7 +41,6 @@ function update()
                 car.scaleY = carScale*globalScale;
                 car.setVelocityX(carSpeedX*direction*globalScale);
 
-
                 car.setSize(650, 1100);
                 car.setOffset(350, 100);
                 car.setAngle(direction===1  ?-carRightAngle :-carLeftAngle);
