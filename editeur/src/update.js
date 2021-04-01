@@ -26,7 +26,8 @@ function update()
             if(croisiere){
                 carSpeedX+=1/40;
                 carSpeedY+=1/500;
-                groundSpeed+=1/100;
+                if(score<200)
+                    groundSpeed+=1/100;
             }
             ground.tilePositionY-=groundSpeed*globalScale;
 

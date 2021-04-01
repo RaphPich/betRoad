@@ -18,7 +18,8 @@ function update()
             if(croisiere){
                 carSpeedX+=1/40;
                 carSpeedY+=1/500;
-                groundSpeed+=1/100;
+                if(score<200)
+                    groundSpeed+=1/100;
             }
             ground.tilePositionY-=groundSpeed*globalScale;
 
@@ -89,7 +90,6 @@ function update()
                 f1.x = config["width"]*.5;
 
                 scoreGroup.clear(true);
-                score = 1500;
                 for(let k=0;k<score.toString().length;k++)
                     scoreGroup.create(config["width"]*.5+(k-score.toString().length*.5+.5)*widthEmpty*(2/3),config['height']*.36,score.toString().charAt(k)).setScale(scoreScale*globalScale);
             }
